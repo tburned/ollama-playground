@@ -1,0 +1,24 @@
+{
+  "name": "ollama-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --import \"data:text/javascript,import {register} from 'node:module'; import {pathToFileURL} from 'node:url'; register('ts-node/esm', pathToFileURL('./'))\" js/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@inquirer/select": "^1.3.3",
+    "@types/node": "^20.11.9",
+    "inquirer": "^9.2.13",
+    "ollama": "^0.4.4"
+  }
+}
